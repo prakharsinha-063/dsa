@@ -1,0 +1,25 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compile and Run with I/O",
+      "type": "shell",
+      "command": "bash",
+      "args": [
+        "-c",
+        "g++ -std=c++17 '${file}' -o '${fileDirname}/a.out' && '${fileDirname}/a.out' < '${fileDirname}/input.txt' > '${fileDirname}/output.txt'"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "presentation": {
+        "echo": true,
+        "reveal": "never", // 🔇 Prevents terminal from popping up
+        "focus": false,
+        "panel": "shared"
+      },
+      "problemMatcher": []
+    }
+  ]
+}
