@@ -115,26 +115,86 @@ int main(){
   //   cout<<"Retirement time baby!!";
   // }
 
-  int d;
-  cin>>d;
-  switch(d){
-    case 1: cout<<"Monday";
-    break;
-    case 2: cout<<"Tuesday";
-    break;
-    case 3: cout<<"Wednesday";
-    break;
-    case 4: cout<<"Thursday";
-    break;
-    case 5: cout<<"Friday";
-    break;
-    case 6: cout<<"Saturday";
-    break;
-    case 7: cout<<"Sunday";
-    break;
-    default: cout<<"meow meow meow";
+  // int d;
+  // cin>>d;
+  // switch(d){
+  //   case 1: cout<<"Monday";
+  //   break;
+  //   case 2: cout<<"Tuesday";
+  //   break;
+  //   case 3: cout<<"Wednesday";
+  //   break;
+  //   case 4: cout<<"Thursday";
+  //   break;
+  //   case 5: cout<<"Friday";
+  //   break;
+  //   case 6: cout<<"Saturday";
+  //   break;
+  //   case 7: cout<<"Sunday";
+  //   break;
+  //   default: cout<<"meow meow meow";
     
+  // }
+
+  //1D array
+  // int n;
+  // cin>>n;
+  // int arr[n];
+  // for(int i=0;i<n;i++){
+  //   cin>>arr[i];
+  // }
+  // for(int i=0;i<n;i++){
+  //   cout<<arr[i]<<" ";
+  // }
+
+  //2D array
+  // int r,c;
+  // cin>>r;
+  // cin>>c;
+  // int arr[r][c];
+  // for(int i=0;i<r;i++){
+  //   for(int j=0;j<c;j++){
+  //     cin>>arr[i][j];
+  //   }
+  // }
+  // for(int i=0;i<r;i++){
+  //   for(int j=0;j<c;j++){
+  //     cout<<arr[i][j]<<" ";
+  //   }
+  //   cout<<"\n";
+  // }
+
+  // string s;
+  // getline(cin,s);
+  // int l=s.length();
+  // for(int i=0;i<l;i++){
+  //   cout<<s[i];
+  // }
+
+  //loops
+  int n;
+  cin>>n;
+  for(int i=1;i<=n;i++){
+    cout<<i<<" ";
   }
+  cout<<"\n";
+  int i=1;
+  for(int a=10;a>0;a--){
+    cout<<i<<" ";
+    i++;
+  }
+  cout<<"\n";
+  int b=1;
+  while(b<=n){
+    cout<<b<<" ";
+    b++;
+  }
+  cout<<"\n";
+  int c=1;
+  do{
+    cout<<c<<" ";
+    c++;
+  }while(c<=n);
 
   return 0;
 
