@@ -1,5 +1,24 @@
 #include<iostream>
 using namespace std;
+void pattern22(int n){
+  for(int i=0;i<2*n-1;i++){
+    for(int j=0;j<2*n-1;j++){
+      int top=i,left=j,bottom=2*n-2-i,right=2*n-2-j;
+       cout<<n-min(min(top,bottom),min(left,right));
+    }cout<<"\n";
+  }
+}
+void pattern21(int n){
+  for(int i=0;i<n;i++){
+    for(int j =0;j<n;j++){
+      if(i==0||j==0||i==n-1||j==n-1){
+        cout<<"*";
+      }else{
+        cout<<" ";
+      } 
+    }cout<<"\n";
+  }
+}
 void pattern18(int n){
   for(int i=0;i<n;i++){
     for(char ch='E'-i;ch<='E';ch++){
@@ -190,7 +209,9 @@ int main(){
   // pattern16(n);
   // pattern17(n);
   // pattern18(n);
-  pattern19(n)
+  // pattern19(n)
+  // pattern21(n);
+  pattern22(n);
 
 
 }
